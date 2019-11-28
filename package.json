@@ -2,9 +2,10 @@
   "name": "angular-getting-started-app",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build",
+    "docker-build": "docker image build -t my-angular-app .",
+    "docker-run": "docker run -p 3000:80 --rm my-angular-app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
